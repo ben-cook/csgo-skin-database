@@ -8,8 +8,8 @@ if (process.argv.length < 5) {
 const request = require("request-promise");
 const totp = require("notp").totp;
 const base32 = require("thirty-two");
-const api_key = "65b9c768-871c-4c82-a9a7-d1676fd6c30b";
-const secret = "OEZ3F7WBXM7GPDFF";
+const api_key = "...";
+const secret = "....";
 const app_id = 730;
 
 var code = totp.gen(base32.decode(secret));
