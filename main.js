@@ -1,8 +1,8 @@
 const request = require("request-promise");
 const totp = require("notp").totp;
 const base32 = require("thirty-two");
-const api_key = "65b9c768-871c-4c82-a9a7-d1676fd6c30b";
-const secret = "OEZ3F7WBXM7GPDFF";
+const api_key = "....";
+const secret = "....";
 
 const app_id = 730;
 const context_id = 2;
@@ -110,21 +110,6 @@ async function searchForLowPrice(page) {
 }
 
 searchForLowPrice(1);
-searchForLowPrice(2);
-searchForLowPrice(3);
-searchForLowPrice(4);
-searchForLowPrice(5);
-
-/*
-for (var i = 1; i < 3; i++) { 
-	searchForLowPrice(i);
-}
-
-
-setTimeout(function() {}, 1000);
-searchForLowPrice(2);
-searchForLowPrice(3);
-*/
 
 function getSaleHistory(market_hash_name, page_history) {
     request(
@@ -215,43 +200,6 @@ function regularSearch(
     );
 }
 
-//regularSearch("Karambit factory new tiger tooth", 0, 10000, 1);
-
-//getSaleHistory("AK-47 | Neon Rider (Factory New)");
-//getSaleHistory("StatTrak%E2%84%A2 AK-47 | Aquamarine Revenge (Minimal Wear)");
-//getSaleHistory("Operation Bravo Case", 1);
-//getSaleHistory("Operation Bravo Case", 2);
-//getSaleHistory("Operation Bravo Case", 3);
-
-//getSaleHistory("Winter Offensive Weapon Case", 1);
-//getSaleHistory("Winter Offensive Weapon Case", 2);/*
-//getSaleHistory("Winter Offensive Weapon Case", 3);
-//getSaleHistory("Winter Offensive Weapon Case", 4);*/
-
-/*
-getSaleHistory("Huntsman Weapon Case", 1);
-getSaleHistory("Huntsman Weapon Case", 2);
-getSaleHistory("Huntsman Weapon Case", 3);
-getSaleHistory("Huntsman Weapon Case", 4);*/
-/*
-getSaleHistory("Operation Hydra Case", 1);
-getSaleHistory("Operation Hydra Case", 2);
-getSaleHistory("Operation Hydra Case", 3);
-getSaleHistory("Operation Hydra Case", 4);
-*/
-//getSaleHistory("Operation Breakout Weapon Case", 1);
-//getSaleHistory("Operation Breakout Weapon Case", 2);
-
-//getSaleHistory("StatTrak™ AK-47 | Neon Rider (Factory New)");
-/*
-getSaleHistory("%E2%98%85 Karambit %7C Tiger Tooth (Factory New)", 1);
-getSaleHistory("%E2%98%85 Karambit %7C Tiger Tooth (Factory New)", 2);
-*/
-
-//getSaleHistory("%E2%98%85 Butterfly Knife", 1);
-//getSaleHistory("%E2%98%85 Karambit %7C Blue Steel (Field-Tested)", 1);
-//getSaleHistory("%E2%98%85 M9 Bayonet %7C Tiger Tooth (Factory New)", 2);
-//getSaleHistory("★ M9 Bayonet | Marble Fade");
 
 /*
 // Retrieve specific item data
