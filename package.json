@@ -1,0 +1,28 @@
+{
+    "name": "bitskinsbot",
+    "version": "1.0.0",
+    "description": "mad cash from bitskins and csmoney",
+    "main": "main.js",
+    "dependencies": {
+        "base32": "0.0.6",
+        "browserify-shim": "^3.8.14",
+        "cheerio": "^1.0.0-rc.3",
+        "express": "^4.17.1",
+        "notp": "^2.0.3",
+        "path": "^0.12.7",
+        "pusher-client": "^1.1.0",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.4",
+        "require": "^2.4.20",
+        "save": "^2.4.0",
+        "thirty-two": "^1.0.2",
+        "totp": "0.0.1",
+        "watchify": "^3.11.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "node main.js"
+    },
+    "author": "Ben Cook",
+    "license": "ISC"
+}
